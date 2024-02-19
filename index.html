@@ -41,8 +41,8 @@
         <div class="input-email">
           <label>Email Address</label>
           <i class="bi bi-envelope-fill"></i>
-          <input type="email" id="email" />
-          <!-- <span class="error"></span> -->
+          <input type="email" id="email" value="email" />
+          <span class="error"></span>
         </div>
         <div class="input-password">
           <label>Password</label>
@@ -65,8 +65,8 @@
           type="submit"
           class="btn"
           id="btn"
-          onclick="myValidation()"
           value="Submit"
+          onclick="ValidateInput()"
         >
           Sign in
         </button>
