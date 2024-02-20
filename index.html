@@ -38,36 +38,25 @@
         <h2>Login</h2>
       </div>
       <div class="form-input">
-        <div class="input-email">
+        <div class="form-control">
           <label>Email Address</label>
           <i class="bi bi-envelope-fill"></i>
-          <input type="email" id="email" value="email" />
-          <span class="error"></span>
+          <input type="email" id="email" />
+          <small class="error"></small>
         </div>
-        <div class="input-password">
+        <div class="form-control">
           <label>Password</label>
           <i class="bi bi-lock-fill"></i>
-          <input
-            type="password"
-            id="password"
-            value="password"
-            title="Enter password correctly!"
-          />
+          <input type="password" id="password" />
           <a href="">Forget your password?</a>
-          <span class="error"></span>
+          <small class="error"></small>
         </div>
       </div>
       <div class="form-check">
         <input type="checkbox" /><span>Stay signed in</span>
       </div>
       <div class="form-btn">
-        <button
-          type="submit"
-          class="btn"
-          id="btn"
-          value="Submit"
-          onclick="ValidateInput()"
-        >
+        <button type="submit" class="btn" id="btn" value="Submit">
           Sign in
         </button>
       </div>

@@ -128,7 +128,7 @@
   width: 100%;
   margin: 12px;
 }
-.input-email input {
+.form-control input {
   width: 420px;
   height: 100%;
   display: flex;
@@ -136,7 +136,7 @@
   padding: 10px;
   padding-left: 30px;
 }
-.input-password input {
+.form-control input {
   width: 420px;
   height: 100%;
   display: flex;
@@ -172,19 +172,19 @@ button {
 }
 /* form section end */
 
-.input-email {
+.form-control {
   display: flex;
   flex-direction: column;
   position: relative;
   top: 0;
   width: 100%;
 }
-.input-password {
+.form-control {
   display: flex;
   flex-direction: column;
   position: relative;
 }
-.input-email i {
+.form-control i {
   position: absolute;
   left: 12px;
   bottom: 10px;
@@ -192,21 +192,21 @@ button {
   font-size: 18px;
   font-size: 15px;
 }
-.input-email label {
+.form-control label {
   font-family: "Open Sans", sans-serif;
 }
-.input-password label {
+.form-control label {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
 }
-.input-password i {
+.form-control i {
   position: absolute;
   left: 12px;
   bottom: 10px;
   color: #999;
   font-size: 15px;
 }
-.input-password a {
+.form-control a {
   position: absolute;
   right: 50px;
   bottom: -10px;

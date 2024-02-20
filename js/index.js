@@ -4,25 +4,22 @@ const emailEl = document.getElementById("email");
 const passwordEl = document.getElementById("password").value;
 const messageEl = document.querySelector(".error");
 
-formEl.addEventListener("submit", e => {
-  e.preventDefault();
-  ValidateInput();
-});
+// create error function message
+function errorMsg(input, msg) {
+  const form_control = input.parentElement;
+  console.log(form_control);
+}
 
-function ValidateInput() {
-  let error = "Hello World";
+// event listener
+formEl.addEventListener("submit", function (e) {
+  e.preventDefault();
 
   if (emailEl.value === "") {
-    alert(`${error}`);
+    errorMsg();
   } else {
-    console.log("World");
+    alert("welcome");
   }
-  if (!passwordEl.value === "") {
-    alert("working");
-  } else if (passwordEl < 0) {
-    console.log("enter");
-  }
-}
+});
 
 // function myValidation() {
 //   const emailEl = document.getElementById("email").value;
