@@ -1,30 +1,70 @@
 "use strict";
 const formEl = document.getElementById("form");
 const emailEl = document.getElementById("email");
-const passwordEl = document.getElementById("password").value;
-const messageEl = document.querySelector(".error");
+const passwordEl = document.getElementById("password");
+const messageEl = document.querySelector(".small");
 
-// create error function message
-function errorMsg() {
-  const errorInput = "Please insert correct details";
-  messageEl.innerHTML = errorInput;
+formEl.addEventListener("submit", e => {
+  e.preventDefault();
+  validationInput();
+});
+
+function validationInput() {
+  if (emailEl.value.trim() === "") {
+    messageEl.textContent = "Please enter your credentials. (UI-0001)";
+    messageEl.style.display = "flex";
+  } else {
+    messageEl.textContent =
+      "The user name or password is incorrect. (LGI-0006)";
+    messageEl.style.display = "";
+  }
+
+  ///password validation
+  if (passwordEl.value.trim() === "") {
+    messageEl.textContent = "Please enter your credentials. (UI-0001).";
+    messageEl.style.display = "flex";
+  } else if (passwordEl.value.trim() < 10) {
+    messageEl.textContent = "Please enter your password. (UI-0002).";
+    messageEl.style.display = "flex";
+  }
 }
 
-// event listener
-formEl.addEventListener("submit", function (e) {
-  e.preventDefault();
+// function errorMsg() {
+//   const errorInput = "Please enter your credentials. (UI-0001)";
+//   const errorPassword = "The user name or password is incorrect. (LGI-0006)";
+//   const errorEmpty = (messageEl.innerHTML = errorInput);
+//   const errorPasswordNotMatch = (messageEl.innerHTML = errorPassword);
+// }
 
-  if (emailEl.value === "") {
-    errorMsg();
-  } else {
-    alert("welcome");
-  }
+// formEl.addEventListener("submit", function (e) {
+//   e.preventDefault();
+//   validateInput();
+//   validateEmail();
 
-  // password section
-  if (passwordEl.value === "") {
-    errorMsg();
-  }
-});
+//   if (emailEl.value === "") {
+//     errorMsg();
+//     messageEl.classList.remove("mystyle");
+//     messageEl.classList.add("mystyle");
+//   } else {
+//     errorMsg();
+//     messageEl.classList.add("mystyle");
+//     messageEl.classList.remove("mystyle");
+//   }
+// });
+
+// const setError = (element, message) => {
+//   const inputControl = element.parentElement;
+//   const errorDisplay = inputControl.getElementById("error");
+
+//   errorDisplay.innerText = message;
+//   inputControl.classList.add("error");
+//   inputControl.classList.remove("success");
+// };
+
+// function validateEmail() {
+//   if (emailEl.value === "") {
+//   }
+// }
 
 // function myValidation() {
 //   const emailEl = document.getElementById("email").value;
@@ -56,3 +96,14 @@ formEl.addEventListener("submit", function (e) {
 //     alert("welcome home");
 //   }
 // }
+
+// const validateInput = () => {
+//   const emailuserValue = emailEl.value;
+//   console.log(emailuserValue);
+//   const passwordValue = passwordEl.value;
+//   console.log(passwordValue);
+
+//   if (emailuserValue === "") {
+//     setError(emailEl, "Please enter your credentials. (UI-0001)");
+//   }
+// };

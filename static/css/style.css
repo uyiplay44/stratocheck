@@ -65,13 +65,6 @@
 /* icon styling end */
 
 /* btn style start */
-.form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 30px;
-}
 .btn a {
   text-decoration: none;
   color: #fff;
@@ -86,20 +79,13 @@
   color: #000;
 }
 
-.error.active {
-  display: none;
-  padding: 20px;
-  background-color: red;
-  padding-left: 40px;
-  font-size: 20px;
-}
 /* form section start*/
 .form {
   display: block;
   flex-direction: column;
   align-items: center;
   position: relative;
-  left: 450px;
+  left: 550px;
   margin: 50px 0;
   width: 450px;
   height: 540px;
@@ -159,6 +145,21 @@
   padding: 10px;
   padding-left: 30px;
 }
+.small {
+  color: #fff;
+  padding: 10px 10px;
+  margin-left: 25px;
+  display: none;
+  flex-direction: column;
+  text-align: start;
+  background-color: rgb(193, 6, 6);
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 3.2px;
+  width: 400px;
+  float: left;
+  transition: all 0.5s ease-in-out;
+}
 .form-check {
   width: 100%;
   padding: 20px;
@@ -176,7 +177,7 @@
 button {
   width: 90%;
   padding: 10px 10px;
-  margin: 20px;
+  margin: 50px 20px;
   outline: none;
   border: none;
   cursor: pointer;
@@ -223,8 +224,8 @@ button {
 }
 .form-control a {
   position: absolute;
-  right: 50px;
-  bottom: -10px;
+  right: 30px;
+  bottom: -25px;
   text-decoration: none;
   color: #0077bb;
   font-family: "Open Sans", sans-serif;
