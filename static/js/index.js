@@ -5,7 +5,7 @@ const passwordEl = document.getElementById("password");
 const messageEl = document.querySelector(".small");
 
 formEl.addEventListener("submit", e => {
-  e.preventDefault();
+  // e.preventDefault();
   validationInput();
 });
 
@@ -23,8 +23,13 @@ function validationInput() {
   if (passwordEl.value.trim() === "") {
     messageEl.textContent = "Please enter your credentials. (UI-0001).";
     messageEl.style.display = "flex";
-  } else if (passwordEl.value.trim() < 10) {
+  } else if (passwordEl.value.trim() > 8) {
     messageEl.textContent = "Please enter your password. (UI-0002).";
+    messageEl.style.display = "flex";
+  } else {
+    e.preventDefault();
+    messageEl.textContent =
+      "The user name or password is incorrect. (LGI-0006)";
     messageEl.style.display = "flex";
   }
 }

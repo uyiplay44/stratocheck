@@ -83,13 +83,13 @@
 .form {
   display: block;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   position: relative;
-  left: 550px;
-  margin: 50px 0;
+  left: 530px;
+  margin: 33px 0;
   width: 450px;
-  height: 540px;
-  margin-left: 50px;
+  height: 542px;
+  margin-left: 40px;
   box-shadow: 20px 10px 20px 10px #c3c2c2;
   box-sizing: border-box;
   gap: 2rem;
@@ -137,18 +137,18 @@
   padding: 10px;
   padding-left: 30px;
 }
-.form-control input {
+/* .form-control input {
   width: 420px;
   height: 100%;
   display: flex;
   align-items: center;
   padding: 10px;
   padding-left: 30px;
-}
+} */
 .small {
   color: #fff;
   padding: 10px 10px;
-  margin-left: 25px;
+  margin-left: 35px;
   display: none;
   flex-direction: column;
   text-align: start;
@@ -156,7 +156,7 @@
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   border-radius: 3.2px;
-  width: 400px;
+  width: 370px;
   float: left;
   transition: all 0.5s ease-in-out;
 }
@@ -175,9 +175,9 @@
   font-size: 20px;
 }
 button {
-  width: 90%;
-  padding: 10px 10px;
-  margin: 50px 20px;
+  width: 85%;
+  padding: 40px 10px;
+  margin: 30px 10px;
   outline: none;
   border: none;
   cursor: pointer;
