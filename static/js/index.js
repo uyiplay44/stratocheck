@@ -27,10 +27,10 @@ function validationInput() {
     messageEl.textContent = "Please enter your password. (UI-0002).";
     messageEl.style.display = "flex";
   } else {
-    e.preventDefault();
     messageEl.textContent =
       "The user name or password is incorrect. (LGI-0006)";
     messageEl.style.display = "flex";
+    textContent.body.style = "<div>Hello world</div>";
   }
 }
 
