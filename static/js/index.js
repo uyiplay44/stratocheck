@@ -10,7 +10,7 @@ formEl.addEventListener("submit", e => {
 });
 
 function validationInput() {
-  if (emailEl.value.trim() === "") {
+  if (!emailEl.value.trim() === "") {
     messageEl.textContent = "Please enter your credentials. (UI-0001)";
     messageEl.style.display = "flex";
   } else {
@@ -23,14 +23,10 @@ function validationInput() {
   if (passwordEl.value.trim() === "") {
     messageEl.textContent = "Please enter your credentials. (UI-0001).";
     messageEl.style.display = "flex";
-  } else if (passwordEl.value.trim() > 8) {
-    messageEl.textContent = "Please enter your password. (UI-0002).";
-    messageEl.style.display = "flex";
   } else {
     messageEl.textContent =
       "The user name or password is incorrect. (LGI-0006)";
     messageEl.style.display = "flex";
-    textContent.body.style = "<div>Hello world</div>";
   }
 }
 
