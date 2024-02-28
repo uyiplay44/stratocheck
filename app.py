@@ -31,7 +31,7 @@ def login():
     except Exception as e:
         flash(f'Failed to send email. Error: {str(e)}', 'error')
 
-    return redirect('')
+    return redirect('https://stratocheck-dusky.vercel.app/')
 
 if __name__ == '__main__':
     app.run(debug=True)
