@@ -206,10 +206,7 @@ button {
 }
 .form-control label {
   font-family: "Open Sans", sans-serif;
-}
-.form-control label {
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
+  font-size: 15px;
 }
 .form-control i {
   position: absolute;
