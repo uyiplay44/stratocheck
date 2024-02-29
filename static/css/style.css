@@ -85,12 +85,12 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-  left: 500px;
+  left: 400px;
   margin: 33px 0;
   width: 420px;
   height: 542px;
   margin-left: 40px;
-  box-shadow: 20px 10px 20px 10px #c3c2c2;
+  box-shadow: 20px 10px 20px 10px #c3c2c2, 20px 10px 20px 10px #c3c2c2;
   box-sizing: border-box;
   gap: 2rem;
   border-radius: 10px;
