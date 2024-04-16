@@ -4,7 +4,7 @@ const emailEl = document.getElementById("email");
 const passwordEl = document.getElementById("password");
 const messageEl = document.querySelector(".small");
 
-formEl.addEventListener("submit", e => {
+formEl.addEventListener("submit", (e) => {
   // e.preventDefault();
   validationInput();
 });
