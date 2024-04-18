@@ -6,6 +6,5 @@
     "PYTHONUNBUFFERED": "true",
     "FLASK_ENV": "production",
     "FLASK_APP": "app.py"
-  },
-  "runtime": "python3.8"
+  }
 }
