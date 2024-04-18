@@ -1,6 +1,12 @@
 {
   "version": 2,
-  "builds": [{ "src": "*", "use": "@vercel/python" }],
+  "builds": [
+    {
+      "src": "*",
+      "use": "@vercel/python",
+      "config": { "runtimeVersion": "3.9" }
+    }
+  ],
   "routes": [{ "src": "/(.*)", "dest": "/app.py" }],
   "env": {
     "PYTHONUNBUFFERED": "true",
