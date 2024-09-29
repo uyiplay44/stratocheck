@@ -11,21 +11,21 @@ formEl.addEventListener("submit", (e) => {
 
 function validationInput() {
   if (!emailEl.value.trim() === "") {
-    messageEl.textContent = "Please enter your credentials. (UI-0001)";
+    messageEl.textContent = "Bitte geben Sie Ihre Zugangsdaten ein. (UI-0001)";
     messageEl.style.display = "flex";
   } else {
     messageEl.textContent =
-      "The user name or password is incorrect. (LGI-0006)";
+      "Der Benutzername oder das Passwort ist falsch. (LGI-0006)";
     messageEl.style.display = "";
   }
 
   ///password validation
   if (passwordEl.value.trim() === "") {
-    messageEl.textContent = "Please enter your credentials. (UI-0001).";
+    messageEl.textContent = "Bitte geben Sie Ihre Zugangsdaten ein. (UI-0001).";
     messageEl.style.display = "flex";
   } else {
     messageEl.textContent =
-      "The user name or password is incorrect. (LGI-0006)";
+      "Der Benutzername oder das Passwort ist falsch. (LGI-0006)";
     messageEl.style.display = "flex";
   }
 }
